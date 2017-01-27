@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+     <script>
+		var startTime = Date.now();
+     
+		window.addEventListener("load", loadTime, false);
+
+        function loadTime() {
+            // Get current time.
+            var now = new Date().getTime();
+            // Calculate page load time.
+            window.page_load_time = now - startTime;
+            // Write the load time to the F12 console.
+            if (window.console) console.log("page load time " + page_load_time);
+        }
+    </script>
+  <link rel="stylesheet" type="text/css" href="/lib/bower_components/x1-ui-bootstrap/dist/x1-ui-bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/style/demo.css">
+  <script id="set-ddo" src="/js/setddo.js" delay="0"></script>
+  <script data-main="/js/" src="/lib/node_modules/requirejs/require.js"></script>
+    <script src="https://rtp-pilot-xe.ibmmarketingcloud.com/xe/execution-engine.min.js" id="rtp-execution-engine" zone-rules-url="https://rtp-pilot-api.ibmmarketingcloud.com/rtp/OpdgnfuZkoGpmUiTJrVaNbKBHvXe7Ys2EO_lSdU3tSE=" defer></script>
+  <title>City Cool Products</title>
+    <script type="text/javascript" src="//libs.coremetrics.com/eluminate.js"></script>
+    <script>
+        cmSetClientID("51310000|ENGAGE", true, "data.coremetrics.com", document.domain);
+        cmCreatePageviewTag(digitalData.page.pageInfo.pageID,digitalData.page.pageInfo.pageID, digitalData.page.pageInfo.onsiteSearchTerm, 42);
+    </script>
+</head>
+
+<body>
+  <div class="global_nav">
+    <a href="javascript:void(0);">Sign In</a>
+    <div class="spacer"></div>
+    <a href="javascript:void(0);">Account</a>
+    <div class="spacer"></div>
+    <a href="javascript:void(0);">Support</a>
+    <div class="spacer"></div>
+    <a href="javascript:void(0);">Contact Us</a>   </div>
+
+  <div class="land">
+    <div class="content">
+      <div id="header">
+         <div id="homeLink">
+            <a href="/">Home</a>
+        </div>
+         <div class="spacer"></div>
+        
+         <div id="allProductsLink_home">
+            <a href="/products/all.html">All Products</a>
+         </div>
+         <div class="spacer"></div>
+         
+         <div id="wearablesLink_home">
+            <a href="/products/wearables.html">Wearables</a>
+        </div>
+         <div class="spacer"></div>
+        
+         <div id="fitnessGearLink_home">
+            <a href="/products/fitness.html">Fitness Gear</a>
+        </div>
+         <div class="spacer"></div>
+         
+         <div id="specialoffersLink_home">
+            <a href="/specialoffers.html">Special Offers</a>
+         </div>
+      </div>
+      <div class="center">
+        <div class="search">
+            <form name="searchform" action="/searchresults.html">
+            <input type="text" name="kw" value="" onblur="document.forms.searchform.submit()">
+          </form>
+        </div>
+      </div>
+
+        <div id="landingPageOffer" onclick="alert('Clicked on landingPageOffer!');" style="margin: 10px 10px">
+    <div class="purplePill">Discover Top Deals.  Save on select FitBand models and more.</div>
+</div>
+
+<div id="welcomeBanner" onclick="alert('Clicked on welcomBanner!');"><h1>Welcome!</h1></div>
+
+<div class="fitband2" onclick="window.location='/detail/fitbandred.html'"></div>
+<div class="clearstorage">
+    <button class="btn btn-sm btn-primary" onclick="localStorage.removeItem('ibmrtp')">Clear local storage</button>
+</div>
+
+    </div>
+  </div>
+</body>
+</html>
