@@ -10,6 +10,22 @@
 
   <body>
     this is a test page.
+    
+    
+    <script type="text/javascript">
+function extendExpire(func) {
+window.addEventListener('load', func, false);
+}
+extendExpire(function() {
+var expireDate = new Date();
+expireDate.setTime(expireDate.getTime()+86400000*90);
+var expireDateString = expireDate.toGMTString();
+document.cookie = 'com.silverpop.iMA.mid=349493' + '; expires=' + expireDateString + '; path=/' + '; domain=' + '.mybluemix.net';
+});
+</script>
+
+    
+    
     </body>
     
     </html>
