@@ -31,7 +31,7 @@ for(var i=0;pair[i];i++) {
     arg[kv[0]]=kv[1];
 }
 var expireDate = new Date();
-expireDate.setTime(expireDate.getTime()+86400000*90);
+expireDate.setTime(expireDate.getTime()+3600000);
 var expireDateString = expireDate.toGMTString();
 document.cookie = 'com.silverpop.iMA.mid=' + arg.spMailingID+'; expires=' + expireDateString + '; path=/' + '; domain=' + '.mybluemix.net';
 }
