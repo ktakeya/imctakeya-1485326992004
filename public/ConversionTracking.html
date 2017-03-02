@@ -1,1 +1,42 @@
+<html>
+<head>
+    
+<meta name="com.silverpop.brandeddomains" content="www.pages00.net,companyabc.mybluemix.net,expone2015.blogspot.jp,imc.mybluemix.net,imctakeya.mybluemix.net,mybluemix.net,www.mybluemix.net,www2.airnet.ne.jp"/>
+<script src="https://www.sc.pages00.net/lp/static/js/iMAWebCookie.js?67823c8d-148d6f5593c-8b9e04a3322ef09b72546765721138ee&h=www.pages00.net" type="text/javascript"></script> 
 
+</head>
+<body>
+this is a test page.
+    
+<script type="text/javascript">
+function extendExpire(func) {
+        window.addEventListener('load', func, false);
+}
+   
+function getspmailingid(){
+var arg = new Object;
+var pair=location.search.substring(1).split('&');
+for(var i=0;pair[i];i++) {
+    var kv = pair[i].split('=');
+    arg[kv[0]]=kv[1];
+}
+}
+    
+extendExpire(
+function() {
+var arg = new Object;
+var pair=location.search.substring(1).split('&');
+for(var i=0;pair[i];i++) {
+    var kv = pair[i].split('=');
+    arg[kv[0]]=kv[1];
+}
+var expireDate = new Date();
+expireDate.setTime(expireDate.getTime()+3600000);
+var expireDateString = expireDate.toGMTString();
+document.cookie = 'com.silverpop.iMA.mid=' + arg.spMailingID+'; expires=' + expireDateString + '; path=/' + '; domain=' + '.mybluemix.net';
+}
+);
+</script>
+
+</body>  
+</html>
