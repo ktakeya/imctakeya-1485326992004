@@ -8,16 +8,6 @@
 <body>
 this is a test page.
     
-<form name="test1">
-<input type="button" value="URLを取得" onClick="getspmailingid()">
-</form>
-    
-<form name="test2">
-<input type="button" value="URLを取得" onClick="function()">
-</form>
-    
-javascript:alert(document.cookie)
-    
 <script type="text/javascript">
 function extendExpire(func) {
         window.addEventListener('load', func, false);
@@ -30,7 +20,6 @@ for(var i=0;pair[i];i++) {
     var kv = pair[i].split('=');
     arg[kv[0]]=kv[1];
 }
-alert(arg.spMailingID);
 }
     
 extendExpire(
@@ -47,7 +36,6 @@ var expireDateString = expireDate.toGMTString();
 document.cookie = 'com.silverpop.iMA.mid=' + arg.spMailingID+'; expires=' + expireDateString + '; path=/' + '; domain=' + '.mybluemix.net';
 }
 );
-alert(document.cookie);
 </script>
 
 </body>  
