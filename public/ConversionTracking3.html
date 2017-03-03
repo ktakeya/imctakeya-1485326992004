@@ -11,12 +11,19 @@
 Set com.silverpop.iMA.mid cookie for 1 hour.
 <p>
 <a href="https://imctakeya.mybluemix.net/Conversion.html">Conversion Page</a>
-     
+ 
 <script type="text/javascript">
 function extendExpire(func) {
-        window.addEventListener('load', func, false);
+window.addEventListener('load', func, false);
 }
 extendExpire(
+function() {
+var arg = new Object;
+var pair=location.search.substring(1).split('&');
+for(var i=0;pair[i];i++) {
+    var kv = pair[i].split('=');
+    arg[kv[0]]=kv[1];
+}
 var expireDate = new Date();
 expireDate.setTime(expireDate.getTime()+86400000*90);
 var expireDateString = expireDate.toGMTString();
@@ -24,9 +31,9 @@ document.cookie = 'com.silverpop.iMA.mid=' + arg.spMailingID+'; expires=' + expi
 document.cookie = 'com.silverpop.iMA.uid=' + arg.spUserID+'; expires=' + expireDateString + '; path=/' + '; domain=' + '.mybluemix.net';
 document.cookie = 'com.silverpop.iMA.rid=' + arg.spReportID+'; expires=' + expireDateString + '; path=/' + '; domain=' + '.mybluemix.net';
 document.cookie = 'com.silverpop.iMA.jid=' + arg.spJobID+'; expires=' + expireDateString + '; path=/' + '; domain=' + '.mybluemix.net';
+}
 );
-alert(document.cookie);
-</script>
+</script>   
 
 </body>  
 </html>
