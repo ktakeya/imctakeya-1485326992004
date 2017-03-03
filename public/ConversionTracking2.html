@@ -17,7 +17,6 @@ function extendExpire(func) {
         window.addEventListener('load', func, false);
 }
 extendExpire(
-function() {
 var arg = new Object;
 var pair=location.search.substring(1).split('&');
 for(var i=0;pair[i];i++) {
@@ -31,7 +30,6 @@ document.cookie = 'com.silverpop.iMA.mid=' + arg.spMailingID+'; expires=' + expi
 document.cookie = 'com.silverpop.iMA.uid=' + arg.spUserID+'; expires=' + expireDateString + '; path=/' + '; domain=' + '.mybluemix.net';
 document.cookie = 'com.silverpop.iMA.rid=' + arg.spReportID+'; expires=' + expireDateString + '; path=/' + '; domain=' + '.mybluemix.net';
 document.cookie = 'com.silverpop.iMA.jid=' + arg.spJobID+'; expires=' + expireDateString + '; path=/' + '; domain=' + '.mybluemix.net';
-}
 );
 alert(document.cookie);
 </script>
