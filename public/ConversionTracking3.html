@@ -16,15 +16,7 @@ Set com.silverpop.iMA.mid cookie for 1 hour.
 function extendExpire(func) {
         window.addEventListener('load', func, false);
 }
-function urlget() {
-var arg = new Object;
-var pair=location.search.substring(1).split('&');
-for(var i=0;pair[i];i++) {
-    var kv = pair[i].split('=');
-    arg[kv[0]]=kv[1];
-}}
 extendExpire(
-urlget();
 var expireDate = new Date();
 expireDate.setTime(expireDate.getTime()+86400000*90);
 var expireDateString = expireDate.toGMTString();
