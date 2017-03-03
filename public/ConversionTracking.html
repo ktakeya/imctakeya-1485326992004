@@ -11,9 +11,7 @@
 Set com.silverpop.iMA.mid cookie for 1 hour.
 <p>
 <a href="https://imctakeya.mybluemix.net/Conversion.html">Conversion Page</a>
-    
-javascript:alert(document.cookie)
-    
+     
 <script type="text/javascript">
 function extendExpire(func) {
         window.addEventListener('load', func, false);
@@ -35,6 +33,7 @@ document.cookie = 'com.silverpop.iMA.uid=' + arg.spUserID+'; expires=' + expireD
 document.cookie = 'com.silverpop.iMA.rid=' + arg.spReportID+'; expires=' + expireDateString + '; path=/' + '; domain=' + '.mybluemix.net';
 }
 );
+alert(document.cookie);
 </script>
 
 </body>  
