@@ -28,6 +28,7 @@ var expireDate = new Date();
 expireDate.setTime(expireDate.getTime()+86400000*90);
 var expireDateString = expireDate.toGMTString();
 document.cookie = 'com.silverpop.iMA.jid=' + arg.spJobID+'; expires=' + expireDateString + '; path=/' + '; domain=' + '.mybluemix.net';
+document.cookie = 'com.silverpop.iMA.rid=' + arg.spReportID+'; expires=' + expireDateString + '; path=/' + '; domain=' + '.mybluemix.net';
 }
 );
 alert(document.cookie);
